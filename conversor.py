@@ -1,14 +1,3 @@
-menu = """
-Bienvenido al conversor de monedas 💰
-1 - Pesos colombianos
-2 - Pesos argentinos
-3 - Pesos mexicanos
-
-Elige una opcion: """
-
-pesos = 0
-
-
 def convertir(v_dolar, p):
     valor_dolar = v_dolar
     dolares = p / valor_dolar
@@ -22,6 +11,16 @@ def preguntar(tipo_peso):
     pesos = float(pesos)
     return pesos
 
+
+menu = """
+Bienvenido al conversor de monedas 💰
+1 - Pesos colombianos
+2 - Pesos argentinos
+3 - Pesos mexicanos
+
+Elige una opcion: """
+
+pesos = 0
 
 opcion = input(menu)
 

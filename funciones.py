@@ -6,21 +6,31 @@
 # imprimir_mensaje()
 # imprimir_mensaje()
 
-def saludar(op):
-    # op = str(op)
-    print('Hola 😃')
-    print('Como estas')
-    print('Elegiste la opcion ' + op)
-    print('Adios')
+
+# def saludar(op):
+#     # op = str(op)
+#     print('Hola 😃')
+#     print('Como estas')
+#     print('Elegiste la opcion ' + op)
+#     print('Adios')
 
 
-opcion = input('Elige una opcion (1, 2, 3): ')
+# opcion = input('Elige una opcion (1, 2, 3): ')
 
-if opcion == '1':
-    saludar(opcion)
-elif opcion == '2':
-    saludar(opcion)
-elif opcion == '3':
-    saludar(opcion)
-else:
-    print('Escoge una opcion valida por favor 😃')
+# if opcion == '1':
+#     saludar(opcion)
+# elif opcion == '2':
+#     saludar(opcion)
+# elif opcion == '3':
+#     saludar(opcion)
+# else:
+#     print('Escoge una opcion valida por favor 😃')
+
+def suma(a, b):
+    print('Se suman dos numeros: ')
+    resultado = a + b
+    return resultado
+
+
+sumatoria = suma(1, 4)
+print(sumatoria)
