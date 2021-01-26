@@ -1,12 +1,22 @@
-def es_palindromo(frase):
-    frase = frase.replace(' ', '').lower()
+def palindromo(frase):
+    frase = frase.replace(' ', '')
+    frase = frase.lower()
     frase_p = frase[::-1]
 
     if frase == frase_p:
-        print(frase + ' Es palindromo!')
+        return True
     else:
-        print(frase + ' No es palindromo!')
+        return False
 
 
-f = input('Ingresa una palabra: ')
-es_palindromo(f)
+def run():
+    frase = input('Escribe una palabra: ')
+    es_palindromo = palindromo(frase)
+    if es_palindromo == True:
+        print('Es palindromo')
+    else:
+        print('No es palindromo')
+
+
+if __name__ == '__main__':
+    run()
